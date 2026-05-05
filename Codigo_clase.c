@@ -16,3 +16,6 @@ int pot(int a, int b){
      int c = pow(a,b);
     return c;
 }
+int residuo(int a, int b){
+    return a%b;
+}
