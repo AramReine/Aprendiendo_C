@@ -30,3 +30,16 @@ void comparar(int a, int b){
     }
     return;
 }
+void num(int a, int b){
+    int aux;
+    if (a>b){
+        aux = a;
+        a = b;
+        b = aux;
+    }
+    for (int i = a; i <=b; i++)
+    {
+        printf("%d",i);
+    }
+    return;
+}
