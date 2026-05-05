@@ -43,3 +43,75 @@ void num(int a, int b){
     }
     return;
 }
+void main(void){
+    
+    int x;
+    int y;
+    int opcion;
+
+    printf("--CALCULADORA--\n");
+    printf("1. Sumar\n");
+    printf("2. Restar\n");
+    printf("3. Multiplicar\n");
+    printf("4. Dividir\n");
+    printf("5. Potencia\n");
+    printf("6. Residuo de division\n");
+    printf("7. Saber si a ><= que b\n");
+    printf("8. Numeros entre a y b\n");
+    printf("Ingrese el numero de la opcion que desea realizar: ");
+    scanf("%d",&opcion);
+
+    switch (opcion)
+    {
+    case 1:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("%d + %d = %d",x,y,suma(x,y));
+    case 2:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("%d - %d = %d",x,y,resta(x,y));
+    case 3:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("%d x %d = %d",x,y,mult(x,y));
+    case 4:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("%d / %d = %d",x,y,div(x,y));
+    case 5:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("%d^(%d) = %d",x,y,pot(x,y));
+    case 6:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        printf("Residuo de %d / %d = %d",x,y,residuo(x,y));
+    case 7:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        comparar(x,y);
+    case 8:
+        printf("Ingrese el primer numero: ");
+        scanf("%d",&x);
+        printf("Ingrese el segundo numero: ");
+        scanf("%d",&y);
+        num(x,y);
+    default:
+        break;
+    }
+}
