@@ -12,3 +12,7 @@ int mult(int a, int b){
 int div(int a, int b){
     return a/b;
 }
+int pot(int a, int b){
+     int c = pow(a,b);
+    return c;
+}
