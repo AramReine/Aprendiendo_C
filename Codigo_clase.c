@@ -19,3 +19,14 @@ int pot(int a, int b){
 int residuo(int a, int b){
     return a%b;
 }
+void comparar(int a, int b){
+    
+    if (a>b){
+        printf("%d es mayor que %d",a,b);
+    }else if (a<b){
+        printf("%d es mayor que %d",b,a);
+    } else{
+        printf("Ambos números son iguales");
+    }
+    return;
+}
