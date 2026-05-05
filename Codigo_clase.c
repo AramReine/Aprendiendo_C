@@ -26,7 +26,7 @@ void comparar(int a, int b){
     }else if (a<b){
         printf("%d es mayor que %d\n",b,a);
     } else{
-        printf("Ambos números son iguales\n");
+        printf("Ambos numeros son iguales\n");
     }
     return;
 }
