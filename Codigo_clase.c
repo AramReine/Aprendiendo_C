@@ -22,11 +22,11 @@ int residuo(int a, int b){
 void comparar(int a, int b){
     
     if (a>b){
-        printf("%d es mayor que %d",a,b);
+        printf("%d es mayor que %d\n",a,b);
     }else if (a<b){
-        printf("%d es mayor que %d",b,a);
+        printf("%d es mayor que %d\n",b,a);
     } else{
-        printf("Ambos números son iguales");
+        printf("Ambos números son iguales\n");
     }
     return;
 }
@@ -39,7 +39,7 @@ void num(int a, int b){
     }
     for (int i = a; i <=b; i++)
     {
-        printf("%d",i);
+        printf("%d\n",i);
     }
     return;
 }
@@ -68,49 +68,57 @@ void main(void){
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("%d + %d = %d",x,y,suma(x,y));
+        printf("%d + %d = %d\n",x,y,suma(x,y));
+        break;
     case 2:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("%d - %d = %d",x,y,resta(x,y));
+        printf("%d - %d = %d\n",x,y,resta(x,y));
+        break;
     case 3:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("%d x %d = %d",x,y,mult(x,y));
+        printf("%d x %d = %d\n",x,y,mult(x,y));
+        break;
     case 4:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("%d / %d = %d",x,y,div(x,y));
+        printf("%d / %d = %d\n",x,y,div(x,y));
+        break;
     case 5:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("%d^(%d) = %d",x,y,pot(x,y));
+        printf("%d^(%d) = %d\n",x,y,pot(x,y));
+        break;
     case 6:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
-        printf("Residuo de %d / %d = %d",x,y,residuo(x,y));
+        printf("Residuo de %d / %d = %d\n",x,y,residuo(x,y));
+        break;
     case 7:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
         comparar(x,y);
+        break;
     case 8:
         printf("Ingrese el primer numero: ");
         scanf("%d",&x);
         printf("Ingrese el segundo numero: ");
         scanf("%d",&y);
         num(x,y);
+        break;
     default:
         break;
     }
